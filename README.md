@@ -1,2 +1,2 @@
 # SimpleBlockchain
-A simple blockchain built in Python with mining.
+A simple blockchain with mining built in Python.
