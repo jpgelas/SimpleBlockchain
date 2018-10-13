@@ -6,6 +6,8 @@ A simple blockchain implementation with mining
 """
 
 import sys
+import datetime
+import hashlib
 
 def main():
     print("Hello")
