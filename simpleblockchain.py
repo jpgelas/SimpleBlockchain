@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
@@ -18,7 +18,7 @@ class Block:
         self.timestamp = timestamp
         self.data = data
         self.nonce = nonce
-        self.hash = self.mine()
+        self.hash = self.mine(5)
         Block.blockID += 1
 
     @staticmethod
@@ -67,7 +67,7 @@ def main():
     num_blocks_to_add = 5
 
     for i in range(1, num_blocks_to_add + 1):
-        block_chain.append(Block(block_chain[-1].hash,
+        block_chain.append(Block(block_chain[i-1].hash,
                              "DataBlaBla",
                              datetime.datetime.now()))
         print(block_chain[i])
