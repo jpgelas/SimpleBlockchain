@@ -67,7 +67,7 @@ def main():
     num_blocks_to_add = 5
 
     for i in range(1, num_blocks_to_add + 1):
-        block_chain.append(Block(block_chain[i-1].hash,
+        block_chain.append(Block(block_chain[-1].hash,
                              "DataBlaBla",
                              datetime.datetime.now()))
         print(block_chain[i])
